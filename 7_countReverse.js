@@ -1,4 +1,4 @@
-if(process.argv.length == 2)
+if (process.argv.length == 2)
     console.log("No parameters passed!");
 else {
     let result = "";
