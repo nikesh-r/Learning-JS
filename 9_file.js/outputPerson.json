@@ -1,1 +1,14 @@
-{"name":"nick","age":20,"isRacist":false,"address":{"city":"paris","country":"","pincode":0},"hobbies":["Playing VideoGames"]}
+{
+  "name": "nick",
+  "age": 20,
+  "isRacist": false,
+  "address": {
+    "city": "Paris",
+    "country": "",
+    "pincode": 0
+  },
+  "hobbies": [
+    "Playing VideoGames"
+  ],
+  "dob": "2020-05-09T20:29:28.798Z"
+}
