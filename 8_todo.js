@@ -24,4 +24,3 @@ const todo = ["world", "fruits", "hello", "groceries"];
 listItem();
 addItem("work");
 deleteItem("fruits");
-
