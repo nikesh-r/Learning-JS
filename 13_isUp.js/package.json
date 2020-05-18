@@ -1,0 +1,15 @@
+{
+  "name": "13_isup",
+  "version": "1.0.0",
+  "description": "isUp package",
+  "main": "index.js",
+  "dependencies": {
+    "is-up": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikesh",
+  "license": "ISC"
+}
