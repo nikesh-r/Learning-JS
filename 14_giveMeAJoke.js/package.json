@@ -1,0 +1,15 @@
+{
+  "name": "14_givemeajoke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "give-me-a-joke": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikesh Ramnani",
+  "license": "ISC"
+}
