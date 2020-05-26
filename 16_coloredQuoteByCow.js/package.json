@@ -1,0 +1,17 @@
+{
+  "name": "16_coloredquotebycow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "cowsay": "^1.4.0",
+    "inspirational-quotes": "^1.0.8",
+    "lolcatjs": "^2.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nikesh",
+  "license": "ISC",
+  "description": ""
+}
