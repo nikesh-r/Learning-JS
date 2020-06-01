@@ -1,4 +1,22 @@
 const inquirer = require('inquirer');
+const inquirerAutocomplete =  require('inquirer-autocomplete-prompt');
+const countries = require("./countries.json");
+
+inquirer.registerPrompt('autocomplete', inquirerAutocomplete);
+
+
+const filterCountries = async text => countries.filter(c => c.toLowerCase().includes(text.toLowerCase()));
+
+
+// const filterCountries = async (text) => {
+//     let results = [];
+//     countries.forEach(country => {
+//         if (country.toLowerCase().includes(text)) {
+//             results.push(country);
+//         }
+//     });
+//     return results;
+// }
 
 const askDetails = async () => {
     console.log("Enter your details:");
@@ -21,9 +39,16 @@ const askDetails = async () => {
                 choices: ['Male', 'Female', 'NonBinary']
             },
             {
-                type: "input",
-                name: "personCountry",
-                message: "What is your country?"
+                type: 'autocomplete',
+                name: 'personCountry',
+                message: 'What is your country?',
+                source: async function(answersSoFar, input) {
+                    if (!input) {
+                        return countries;
+                    }
+                    const result = await filterCountries(input);
+                    return result;
+                }
             }
         ])
         .then(answers => {
